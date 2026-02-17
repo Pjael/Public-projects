@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        grid-row: span 1 !important;
+    }
+}
+
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    /* base height */
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Make images fill their boxes */
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Layout control */
+
+/* Left tall */
+.item1 {
+    grid-row: span 2;
+}
+
+/* Middle bottom large */
+.item4 {
+    grid-row: span 2;
+}
+
+/* Right tall */
+.item3 {
+    grid-row: span 2;
+}

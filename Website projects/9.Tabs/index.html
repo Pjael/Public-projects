@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Tab Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="tabs-container">
+
+        <!-- Tab Buttons -->
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+            <button class="tab-btn" data-tab="tab2">Tab 2</button>
+            <button class="tab-btn" data-tab="tab3">Tab 3</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+
+            <div class="tab-panel active" id="tab1">
+                <h2>First tab/h2>
+                    <p>Each tab should hide the content of the other tab and show
+                        the content of clicked tab. By default, enable first tab.
+                    </p>
+                    <div class="tab-content">
+                        <p>First Tab to be displayed here.</p>
+                    </div>
+                    <p>Add some dummy content or just add simple text showing the tab</p>
+            </div>
+
+            <div class="tab-panel" id="tab2">
+                <h2>Second tab</h2>
+                <p>This is the second tab.</p>
+            </div>
+
+            <div class="tab-panel" id="tab3">
+                <h2>Third tab</h2>
+                <p>This is the third tab.</p>
+            </div>
+
+            <div class="tab-panel" id="tab4">
+                <h2>Fourth tab</h2>
+                <p>This is the fourth tab.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
